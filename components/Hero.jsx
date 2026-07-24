@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       <div className="container hero-grid">
-        <div className="hero-content">
+        <div>
           <div className="eyebrow hero-eyebrow">Parceira estratégica de transformação digital</div>
           <h1>
             <div className="line"><span ref={(el) => (linesRef.current[0] = el)}>Tecnologia que</span></div>
@@ -63,18 +63,15 @@ export default function Hero() {
         </div>
 
         <div className="hero-visual">
-          <div className="hero-visual-glow" />
-          <div className="hero-visual-frame">
-            <Image
-              src="/hero-ai-face.png"
-              alt="Rosto digital formado por fragmentos de dados, representando inteligência artificial"
-              width={700}
-              height={1243}
-              priority
-              sizes="(max-width: 980px) 70vw, 650px"
-              className="hero-visual-image"
-            />
-          </div>
+          <div className="hero-visual-glow" aria-hidden="true" />
+          <Image
+            src="/hero-ai-face-cutout.png"
+            alt="Rosto digital formado por fragmentos de dados, representando inteligência artificial"
+            fill
+            priority
+            sizes="(max-width: 980px) 55vw, 38vw"
+            className="hero-visual-img"
+          />
         </div>
       </div>
 

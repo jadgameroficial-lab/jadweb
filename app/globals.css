@@ -10,6 +10,9 @@
   --orange: #f2703b;
   --orange-deep: #ff8a52;
   --orange-dim: rgba(242, 112, 59, 0.14);
+  --green: #3ae07a;
+  --green-deep: #6bf59a;
+  --green-dim: rgba(58, 224, 122, 0.14);
   --gray: #71717a;
   --glass: rgba(255, 255, 255, 0.045);
 }
@@ -235,7 +238,7 @@ nav .container {
   left: 50%;
   top: 42%;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, rgba(242, 112, 59, 0.16) 0%, transparent 62%);
+  background: radial-gradient(circle, rgba(58, 224, 122, 0.14) 0%, transparent 62%);
   filter: blur(10px);
 }
 .hero-atmosphere .grain {
@@ -249,76 +252,54 @@ nav .container {
   inset: 0;
   background: radial-gradient(ellipse at 50% 45%, transparent 40%, rgba(0, 0, 0, 0.55) 100%);
 }
-.hero-visual {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 560px;
-  z-index: 2;
-}
-.hero-visual-glow {
-  position: absolute;
-  width: 480px;
-  height: 480px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(80, 220, 130, 0.32) 0%, rgba(80, 220, 130, 0.12) 45%, transparent 72%);
-  filter: blur(50px);
-  z-index: 0;
-  animation: heroGlowPulse 6s ease-in-out infinite;
-}
-@keyframes heroGlowPulse {
-  0%, 100% { transform: scale(1); opacity: 0.9; }
-  50% { transform: scale(1.08); opacity: 1; }
-}
-.hero-visual-frame {
-  position: relative;
-  z-index: 1;
-  width: min(650px, 88%);
-  border-radius: 28px;
-  overflow: hidden;
-  box-shadow:
-    0 40px 90px -20px rgba(0, 0, 0, 0.65),
-    0 0 0 1px rgba(255, 255, 255, 0.06),
-    0 0 70px -10px rgba(80, 220, 130, 0.22);
-  animation: heroFloat 7s ease-in-out infinite;
-}
-.hero-visual-frame .hero-visual-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-@keyframes heroFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-14px); }
-}
-@media (max-width: 980px) {
-  .hero-visual {
-    min-height: 380px;
-    margin-top: 10px;
-  }
-  .hero-visual-glow {
-    width: 340px;
-    height: 340px;
-  }
-  .hero-visual-frame {
-    width: min(420px, 78%);
-  }
-}
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 64px;
   align-items: center;
   position: relative;
   z-index: 2;
-}
-.hero-content {
-  max-width: 640px;
 }
 @media (max-width: 980px) {
   .hero-grid {
     grid-template-columns: 1fr;
+    gap: 56px;
+  }
+}
+
+/* ---------- Hero visual (image integrated in layout, no card) ---------- */
+.hero-visual {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 631 / 1308;
+  margin-inline: auto 0;
+  justify-self: end;
+}
+.hero-visual-glow {
+  position: absolute;
+  inset: -12%;
+  z-index: 0;
+  background: radial-gradient(ellipse 60% 55% at 50% 42%, rgba(58, 224, 122, 0.32) 0%, rgba(58, 224, 122, 0.12) 45%, transparent 72%);
+  filter: blur(28px);
+  pointer-events: none;
+}
+.hero-visual-img {
+  position: relative;
+  z-index: 1;
+  object-fit: contain;
+  object-position: center;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.45));
+}
+@media (max-width: 980px) {
+  .hero-visual {
+    max-width: 240px;
+    justify-self: center;
+    margin-inline: auto;
   }
 }
 .hero-eyebrow {
@@ -339,7 +320,7 @@ nav .container {
 }
 .hero h1 em {
   font-style: normal;
-  color: var(--orange);
+  color: var(--green);
 }
 .hero-sub {
   margin-top: 28px;
@@ -376,7 +357,7 @@ nav .container {
   font-family: "JetBrains Mono";
   font-size: 11px;
   font-weight: 600;
-  color: var(--orange-deep);
+  color: var(--green-deep);
 }
 .avatars span:first-child {
   margin-left: 0;
