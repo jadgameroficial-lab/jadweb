@@ -1,10 +1,8 @@
 "use client";
 
-import dynamic from "next/dynamic";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-
-const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
 
 export default function Hero() {
   const linesRef = useRef([]);
@@ -25,7 +23,15 @@ export default function Hero() {
         <div className="vignette" />
       </div>
       <div className="hero-canvas-wrap">
-        <HeroScene />
+        <Image
+          src="/hero-ai-face.png"
+          alt="Rosto digital formado por fragmentos de dados, representando inteligência artificial"
+          fill
+          priority
+          sizes="100vw"
+          className="hero-bg-image"
+        />
+        <div className="hero-image-overlay" />
       </div>
 
       <div className="container hero-grid">
