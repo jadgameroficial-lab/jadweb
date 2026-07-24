@@ -1,5 +1,5 @@
 const WA_LINK =
-  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20WEB%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
+  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20Platform%20OS%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico.";
 
 export default function Footer() {
   return (
@@ -9,10 +9,11 @@ export default function Footer() {
           <div>
             <a href="#top" className="logo">
               <span className="dot" />
-              JAD WEB
+              JAD Platform OS
             </a>
             <p style={{ maxWidth: 280, marginTop: 18, fontSize: 14, color: "var(--ink-60)", lineHeight: 1.6 }}>
-              Estúdio de soluções digitais sob medida para empresas que querem crescer através da tecnologia.
+              O sistema operacional para o crescimento da sua empresa: sites, sistemas, IA, automação e tráfego,
+              tudo integrado.
             </p>
           </div>
           <div className="footer-cols">
@@ -27,12 +28,12 @@ export default function Footer() {
             <div className="footer-col">
               <h4>Contato</h4>
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer">WhatsApp</a>
-              <a href="#contato">Solicitar orçamento</a>
+              <a href="#contato">Agendar diagnóstico</a>
             </div>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 JAD WEB. Todos os direitos reservados.</span>
+          <span>© 2026 JAD Platform OS. Todos os direitos reservados.</span>
           <span>Blumenau, SC</span>
         </div>
       </div>

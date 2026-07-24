@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 const WA_LINK =
-  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20WEB%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
+  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20Platform%20OS%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico.";
 
 const features = [
   {
@@ -77,28 +77,28 @@ export default function Hero() {
       <div className="container">
         <div className="hero-grid">
           <div>
-            <div className="eyebrow hero-eyebrow">Parceira estratégica de transformação digital</div>
+            <div className="eyebrow hero-eyebrow">Sistema operacional para o crescimento de empresas</div>
             <h1>
-              <div className="line"><span ref={(el) => (linesRef.current[0] = el)}>Tecnologia que</span></div>
-              <div className="line"><span ref={(el) => (linesRef.current[1] = el)}>parece feita por</span></div>
-              <div className="line"><span ref={(el) => (linesRef.current[2] = el)}>uma <em>gigante</em></span></div>
-              <div className="line"><span ref={(el) => (linesRef.current[3] = el)}>de software.</span></div>
+              <div className="line"><span ref={(el) => (linesRef.current[0] = el)}>O sistema operacional</span></div>
+              <div className="line"><span ref={(el) => (linesRef.current[1] = el)}>para o <em>crescimento</em></span></div>
+              <div className="line"><span ref={(el) => (linesRef.current[2] = el)}>da sua empresa.</span></div>
             </h1>
+            <div className="hero-product-tag">JAD Platform OS</div>
             <p className="hero-sub">
-              Desenvolvemos soluções digitais personalizadas que escalam seu negócio e transformam ideias em
-              produtos de alta performance.
+              Mais do que criar sites. Construímos toda a infraestrutura digital que sua empresa precisa para
+              vender mais, automatizar processos e crescer de forma previsível.
             </p>
             <div className="hero-cta">
               <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                Solicitar orçamento<span className="btn-arrow">→</span>
+                Agendar diagnóstico<span className="btn-arrow">→</span>
               </a>
-              <a href="#processo" className="hero-play">
+              <a href="#servicos" className="hero-play">
                 <span className="hero-play-icon">
-                  <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8 5v14l11-7Z" />
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 5v14M5 12l7 7 7-7" />
                   </svg>
                 </span>
-                Ver como funciona
+                Conhecer soluções
               </a>
             </div>
           </div>

@@ -158,9 +158,10 @@ nav .container {
 }
 .logo {
   font-family: "Clash Display", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: -0.02em;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -321,6 +322,14 @@ nav .container {
 .hero h1 em {
   font-style: normal;
   color: var(--green);
+}
+.hero-product-tag {
+  font-family: "JetBrains Mono";
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--green);
+  margin-top: 18px;
 }
 .hero-sub {
   margin-top: 28px;
@@ -568,7 +577,7 @@ section {
 /* ---------- Serviços ---------- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1px;
   background: var(--line);
   border: 1px solid var(--line);
@@ -593,7 +602,7 @@ section {
   overflow: hidden;
 }
 .service-card:hover {
-  background: linear-gradient(160deg, var(--bg-elev-2), #211208);
+  background: linear-gradient(160deg, var(--bg-elev-2), #0d2418);
   transform: translateY(-4px);
 }
 .service-num {

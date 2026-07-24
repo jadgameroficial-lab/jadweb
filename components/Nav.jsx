@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const WA_LINK =
-  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20WEB%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
+  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20Platform%20OS%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico.";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -19,7 +19,7 @@ export default function Nav() {
       <div className="container">
         <a href="#top" className="logo">
           <span className="dot" />
-          JAD WEB
+          JAD Platform OS
         </a>
         <div className="nav-links">
           <a href="#servicos">Serviços</a>
@@ -38,7 +38,7 @@ export default function Nav() {
             </span>
           </a>
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-            Solicitar orçamento<span className="btn-arrow">→</span>
+            Agendar diagnóstico<span className="btn-arrow">→</span>
           </a>
         </div>
       </div>

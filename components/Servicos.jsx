@@ -1,20 +1,20 @@
 const services = [
   {
     num: "01",
-    title: "Landing pages de alta conversão",
-    desc: "Páginas construídas para vender, com copy direta, hierarquia clara e velocidade acima da média do mercado.",
-    icon: <path d="M13 2 3 14h8l-1 8 10-12h-8z" />,
-  },
-  {
-    num: "02",
     title: "Sites institucionais",
-    desc: "Presença digital com identidade própria, otimizada para SEO e pronta para escalar junto com a empresa.",
+    desc: "Presença profissional para gerar confiança.",
     icon: <path d="M4 6h16M4 12h16M4 18h10" />,
   },
   {
+    num: "02",
+    title: "Landing pages",
+    desc: "Páginas focadas em conversão.",
+    icon: <path d="M13 2 3 14h8l-1 8 10-12h-8z" />,
+  },
+  {
     num: "03",
-    title: "Sistemas web e SaaS",
-    desc: "Produtos completos, com autenticação, planos e painéis pensados para o uso real do seu cliente.",
+    title: "Sistemas SaaS",
+    desc: "Softwares sob medida para sua operação.",
     icon: (
       <>
         <rect x="3" y="4" width="18" height="14" rx="2" />
@@ -24,35 +24,56 @@ const services = [
   },
   {
     num: "04",
-    title: "E-commerce completo",
-    desc: "Loja virtual rápida, com checkout otimizado e integração de pagamento pronta para vender no dia um.",
+    title: "Aplicativos",
+    desc: "Android e iPhone.",
     icon: (
       <>
-        <circle cx="9" cy="21" r="1" />
-        <circle cx="18" cy="21" r="1" />
-        <path d="M2 3h2l2.6 12.6a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L21 7H6" />
+        <rect x="7" y="2" width="10" height="20" rx="2" />
+        <path d="M11 18h2" />
       </>
     ),
   },
   {
     num: "05",
-    title: "CRM, ERP e dashboards",
-    desc: "Ferramentas de gestão sob medida para o seu processo, com relatórios e indicadores em tempo real.",
+    title: "Inteligência Artificial",
+    desc: "Assistentes inteligentes para atendimento e processos.",
     icon: (
       <>
-        <circle cx="12" cy="12" r="9" />
-        <path d="M12 8v4l3 2" />
+        <rect x="4" y="7" width="16" height="12" rx="2" />
+        <path d="M9 3v4M15 3v4M8 12h.01M16 12h.01M9 16h6" />
       </>
     ),
   },
   {
     num: "06",
-    title: "Integrações com IA e automação",
-    desc: "Assistentes, automações de processos e integrações de API que economizam horas reais da sua equipe.",
+    title: "Automações",
+    desc: "WhatsApp, CRM, vendas e operação.",
     icon: (
       <>
         <path d="M12 2a10 10 0 1 0 10 10" />
         <path d="M12 8v4l3 2" />
+      </>
+    ),
+  },
+  {
+    num: "07",
+    title: "Gestão de Tráfego",
+    desc: "Google Ads, Meta Ads e TikTok Ads.",
+    icon: (
+      <>
+        <path d="M3 3v18h18" />
+        <path d="M7 15l4-5 3 3 5-7" />
+      </>
+    ),
+  },
+  {
+    num: "08",
+    title: "Mentoria",
+    desc: "Estratégia de crescimento digital.",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <path d="m9.5 9.5 2-4.5 2 4.5 4.5 2-4.5 2-2 4.5-2-4.5-4.5-2Z" />
       </>
     ),
   },
@@ -63,11 +84,11 @@ export default function Servicos() {
     <section id="servicos">
       <div className="container">
         <div className="section-head reveal">
-          <div className="eyebrow">O que desenvolvemos</div>
-          <h2>De uma landing page a um sistema completo.</h2>
+          <div className="eyebrow">Nosso ecossistema</div>
+          <h2>Tudo que sua empresa precisa.</h2>
           <p>
-            Não importa o tamanho do desafio. Temos o time e o processo para transformar qualquer operação em
-            um produto digital sólido.
+            Não vendemos apenas serviços isolados. Estruturamos, digitalizamos, automatizamos e escalamos o seu
+            negócio dentro de um único sistema.
           </p>
         </div>
         <div className="services-grid reveal">

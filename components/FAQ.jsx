@@ -8,8 +8,8 @@ const faqs = [
     a: "Depende do escopo. Uma landing page costuma ficar pronta em 1 a 2 semanas, sites institucionais em 2 a 4 semanas, e sistemas ou SaaS completos variam de 4 a 12 semanas conforme a complexidade.",
   },
   {
-    q: "Como funciona o orçamento?",
-    a: "Você preenche o formulário abaixo ou fala com a gente pelo WhatsApp, entendemos o objetivo do projeto e retornamos com uma proposta clara, com escopo e prazo definidos.",
+    q: "Como funciona o diagnóstico estratégico?",
+    a: "Você preenche o formulário abaixo ou fala com a gente pelo WhatsApp, entendemos a operação e os objetivos da sua empresa e retornamos com um plano claro de solução, escopo e prazo.",
   },
   {
     q: "Vocês oferecem suporte depois da entrega?",

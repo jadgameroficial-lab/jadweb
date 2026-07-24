@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "JAD WEB · Soluções digitais sob medida",
+  title: "JAD Platform OS · O sistema operacional para o crescimento da sua empresa",
   description:
-    "A JAD WEB desenvolve sites, sistemas, SaaS, e-commerces e automações com IA para empresas que querem crescer através da tecnologia.",
+    "A JAD Platform OS estrutura, digitaliza, automatiza e escala empresas: sites, landing pages, sistemas SaaS, apps, IA, automação e gestão de tráfego, tudo integrado em um único ecossistema.",
 };
 
 export default function RootLayout({ children }) {

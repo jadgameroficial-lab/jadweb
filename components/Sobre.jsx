@@ -3,18 +3,18 @@ export default function Sobre() {
     <section id="sobre">
       <div className="container sobre-grid">
         <div className="sobre-copy reveal">
-          <div className="eyebrow">Sobre a JAD WEB</div>
+          <div className="eyebrow">Sobre a JAD Platform OS</div>
           <p style={{ marginTop: 22 }}>
-            Não vendemos apenas sites. Desenvolvemos soluções digitais completas para empresas que decidiram
-            crescer através da tecnologia.
+            Não criamos apenas sites. Construímos a infraestrutura digital que faz empresas crescerem: sites,
+            sistemas, IA, automação e tráfego, tudo dentro de um único ecossistema.
           </p>
           <p>
-            Atuamos como um time técnico dedicado, cuidando de arquitetura, performance e experiência com o
-            mesmo padrão de exigência de uma equipe de produto internacional.
+            Atuamos como o time técnico e estratégico da sua operação, cuidando de arquitetura, performance e
+            experiência com o mesmo padrão de exigência de uma equipe de produto internacional.
           </p>
           <p>
-            De uma landing page a um SaaS completo, cada entrega nasce de um objetivo de negócio real: vender
-            mais, atender melhor ou automatizar o que hoje consome horas do seu time.
+            De uma landing page a um sistema operacional completo, cada entrega nasce de um objetivo de negócio
+            real: vender mais, atender melhor e crescer de forma previsível.
           </p>
         </div>
         <div className="reveal">

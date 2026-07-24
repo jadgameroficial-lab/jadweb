@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const WA_LINK =
-  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20WEB%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento.";
+  "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20Platform%20OS%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico.";
 
 export default function Contato() {
-  const [form, setForm] = useState({ nome: "", fone: "", tipo: "Site institucional", msg: "" });
+  const [form, setForm] = useState({ nome: "", fone: "", tipo: "Diagnóstico geral", msg: "" });
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -23,18 +23,18 @@ export default function Contato() {
       <div className="container cta-final-grid">
         <div className="cta-final-copy reveal">
           <div className="eyebrow">Vamos conversar</div>
-          <h2 style={{ marginTop: 18 }}>Pronto para tirar o seu projeto do papel?</h2>
+          <h2 style={{ marginTop: 18 }}>Sua empresa não precisa apenas de um site.</h2>
           <p>
-            Preencha o formulário ao lado com alguns detalhes ou fale direto com a equipe pelo WhatsApp.
-            Retornamos com uma proposta clara, sem enrolação.
+            Ela precisa de um sistema completo para crescer. Preencha o formulário ao lado ou fale direto com a
+            equipe pelo WhatsApp — retornamos com um diagnóstico claro, sem enrolação.
           </p>
           <div className="cta-badges">
             <span>Resposta em até 1 dia útil</span>
-            <span>Proposta sem compromisso</span>
+            <span>Diagnóstico sem compromisso</span>
           </div>
           <div className="hero-cta" style={{ marginTop: 34 }}>
             <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-              Falar com um especialista<span className="btn-arrow">→</span>
+              Quero um diagnóstico estratégico<span className="btn-arrow">→</span>
             </a>
           </div>
         </div>
@@ -53,12 +53,15 @@ export default function Contato() {
           <div className="field">
             <label>Tipo de projeto</label>
             <select name="tipo" value={form.tipo} onChange={handleChange}>
+              <option>Diagnóstico geral</option>
               <option>Site institucional</option>
               <option>Landing page</option>
-              <option>Sistema web ou SaaS</option>
-              <option>E-commerce</option>
-              <option>CRM, ERP ou dashboard</option>
-              <option>Automação com IA</option>
+              <option>Sistema SaaS</option>
+              <option>Aplicativo</option>
+              <option>Inteligência artificial</option>
+              <option>Automações</option>
+              <option>Gestão de tráfego</option>
+              <option>Mentoria</option>
               <option>Outro</option>
             </select>
           </div>
