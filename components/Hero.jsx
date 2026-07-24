@@ -22,20 +22,9 @@ export default function Hero() {
         <div className="glow-a" />
         <div className="vignette" />
       </div>
-      <div className="hero-canvas-wrap">
-        <Image
-          src="/hero-ai-face.png"
-          alt="Rosto digital formado por fragmentos de dados, representando inteligência artificial"
-          fill
-          priority
-          sizes="100vw"
-          className="hero-bg-image"
-        />
-        <div className="hero-image-overlay" />
-      </div>
 
       <div className="container hero-grid">
-        <div>
+        <div className="hero-content">
           <div className="eyebrow hero-eyebrow">Parceira estratégica de transformação digital</div>
           <h1>
             <div className="line"><span ref={(el) => (linesRef.current[0] = el)}>Tecnologia que</span></div>
@@ -72,7 +61,21 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div />
+
+        <div className="hero-visual">
+          <div className="hero-visual-glow" />
+          <div className="hero-visual-frame">
+            <Image
+              src="/hero-ai-face.png"
+              alt="Rosto digital formado por fragmentos de dados, representando inteligência artificial"
+              width={700}
+              height={1243}
+              priority
+              sizes="(max-width: 980px) 70vw, 650px"
+              className="hero-visual-image"
+            />
+          </div>
+        </div>
       </div>
 
       <div className="scroll-cue">
