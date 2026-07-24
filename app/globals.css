@@ -7,9 +7,9 @@
   --ink-35: rgba(250, 250, 250, 0.38);
   --line: rgba(250, 250, 250, 0.1);
   --line-soft: rgba(250, 250, 250, 0.06);
-  --orange: #f2703b;
-  --orange-deep: #ff8a52;
-  --orange-dim: rgba(242, 112, 59, 0.14);
+  --orange: #3ae07a;
+  --orange-deep: #6bf59a;
+  --orange-dim: rgba(58, 224, 122, 0.14);
   --green: #3ae07a;
   --green-deep: #6bf59a;
   --green-dim: rgba(58, 224, 122, 0.14);
@@ -116,7 +116,7 @@ button {
 .btn-primary:hover {
   background: var(--orange-deep);
   transform: translateY(-3px);
-  box-shadow: 0 16px 32px -10px rgba(242, 112, 59, 0.55);
+  box-shadow: 0 16px 32px -10px rgba(58, 224, 122, 0.55);
 }
 .btn-ghost {
   background: var(--glass);
@@ -331,48 +331,122 @@ nav .container {
 }
 .hero-cta {
   display: flex;
-  gap: 16px;
+  align-items: center;
+  gap: 28px;
   margin-top: 38px;
   flex-wrap: wrap;
 }
-.hero-meta {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-top: 56px;
-}
-.avatars {
-  display: flex;
-}
-.avatars span {
-  width: 34px;
-  height: 34px;
+.btn-icon {
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
-  border: 2px solid var(--bg);
-  margin-left: -10px;
-  background: linear-gradient(135deg, #3a3a3f, #1c1c1f);
+  background: var(--green);
+  color: #0a0a0a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.btn-icon svg {
+  width: 13px;
+  height: 13px;
+}
+.hero-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  transition: opacity 0.3s ease;
+}
+.hero-play:hover {
+  opacity: 0.8;
+}
+.hero-play-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ink);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "JetBrains Mono";
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--green-deep);
+  flex-shrink: 0;
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
-.avatars span:first-child {
-  margin-left: 0;
+.hero-play-icon svg {
+  width: 15px;
+  height: 15px;
+  color: var(--ink);
+  margin-left: 2px;
 }
-.hero-meta .meta-text {
-  font-size: 13px;
-  line-height: 1.3;
+.hero-play:hover .hero-play-icon {
+  border-color: var(--green);
+  background: var(--green-dim);
 }
-.hero-meta .meta-text b {
-  display: block;
+
+.hero-features {
+  margin-top: 72px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.hero-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 28px 30px;
+  border-left: 1px solid var(--line);
+}
+.hero-feature:first-child {
+  border-left: none;
+}
+.hero-feature-icon {
+  width: 22px;
+  height: 22px;
+  color: var(--green);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.hero-feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.hero-feature h4 {
   font-family: "Clash Display";
   font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
-.hero-meta .meta-text small {
+.hero-feature p {
+  font-size: 14px;
+  line-height: 1.5;
   color: var(--ink-60);
+}
+@media (max-width: 980px) {
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-feature {
+    border-left: none;
+    border-top: 1px solid var(--line);
+  }
+  .hero-feature:first-child,
+  .hero-feature:nth-child(2) {
+    border-top: none;
+  }
+}
+@media (max-width: 620px) {
+  .hero-features {
+    grid-template-columns: 1fr;
+  }
+  .hero-feature {
+    border-top: 1px solid var(--line);
+  }
+  .hero-feature:first-child {
+    border-top: none;
+  }
 }
 
 .scroll-cue {
@@ -682,7 +756,7 @@ section {
 }
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(242, 112, 59, 0.4);
+  border-color: rgba(58, 224, 122, 0.4);
 }
 .mockup-frame {
   position: relative;
@@ -831,7 +905,7 @@ section {
 .mockup-chart {
   height: 110px;
   border-radius: 8px;
-  background: linear-gradient(180deg, rgba(242, 112, 59, 0.16), transparent);
+  background: linear-gradient(180deg, rgba(58, 224, 122, 0.16), transparent);
   border: 1px solid var(--line-soft);
   position: relative;
   overflow: hidden;
@@ -935,7 +1009,7 @@ section {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #3a2410, var(--orange));
+  background: linear-gradient(135deg, #0f3a22, var(--orange));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1172,7 +1246,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 16px 36px -10px rgba(242, 112, 59, 0.6);
+  box-shadow: 0 16px 36px -10px rgba(58, 224, 122, 0.6);
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .wa-float:hover {
