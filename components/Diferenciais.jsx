@@ -11,7 +11,7 @@ export default function Diferenciais() {
       <div className="container">
         <div className="section-head reveal">
           <div className="eyebrow">Diferenciais</div>
-          <h2>Por que empresas escolhem a JAD Platform OS.</h2>
+          <h2>Por que empresas escolhem a JAD&nbsp;Platform&nbsp;OS.</h2>
         </div>
         <div className="diff-grid reveal">
           {items.map((it) => (
