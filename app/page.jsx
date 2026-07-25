@@ -1,5 +1,7 @@
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
+import Stats from "@/components/Stats";
+import PartnerLogos from "@/components/PartnerLogos";
 import Sobre from "@/components/Sobre";
 import Servicos from "@/components/Servicos";
 import Diferenciais from "@/components/Diferenciais";
@@ -20,6 +22,8 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+        <Stats />
+        <PartnerLogos />
         <Sobre />
         <Servicos />
         <Diferenciais />
