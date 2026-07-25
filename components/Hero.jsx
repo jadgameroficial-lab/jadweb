@@ -61,11 +61,6 @@ export default function Hero() {
           <HeroEcosystem />
         </div>
       </div>
-
-      <div className="scroll-cue">
-        <span>Scroll</span>
-        <div className="stick" />
-      </div>
     </section>
   );
 }
