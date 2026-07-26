@@ -1,0 +1,157 @@
+/* ==========================================================================
+   Legal pages (Política de Privacidade, Termos de Uso, Política de Cookies)
+   Scoped stylesheet — reuses the site's existing design tokens (colors,
+   fonts, .container, .eyebrow) but does not modify app/globals.css.
+   ========================================================================== */
+
+.legal-main {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  min-height: 100svh;
+  background: var(--bg);
+}
+
+.legal-header {
+  max-width: 760px;
+  margin-bottom: 56px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--line);
+}
+.legal-header h1 {
+  font-size: clamp(32px, 4.4vw, 52px);
+  font-weight: 600;
+  margin-top: 18px;
+  letter-spacing: -0.02em;
+}
+.legal-updated {
+  margin-top: 18px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+  color: var(--ink-35);
+}
+
+.legal-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 64px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .legal-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+/* ---------- Sidebar index ---------- */
+.legal-index {
+  position: sticky;
+  top: 130px;
+}
+@media (max-width: 900px) {
+  .legal-index {
+    position: static;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 20px 22px;
+    background: var(--glass);
+  }
+}
+.legal-index-label {
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-35);
+  margin-bottom: 16px;
+}
+.legal-index ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+@media (max-width: 900px) {
+  .legal-index ul {
+    max-height: none;
+  }
+}
+.legal-index a {
+  display: block;
+  padding: 7px 0 7px 14px;
+  border-left: 1px solid var(--line);
+  font-size: 13.5px;
+  line-height: 1.4;
+  color: var(--ink-60);
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.legal-index a:hover {
+  color: var(--ink);
+}
+.legal-index a.active {
+  color: var(--green);
+  border-left-color: var(--green);
+}
+
+/* ---------- Article content ---------- */
+.legal-article {
+  max-width: 680px;
+}
+.legal-article section {
+  padding: 0;
+  scroll-margin-top: 130px;
+}
+.legal-article h2 {
+  font-size: clamp(20px, 2.6vw, 25px);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.legal-article h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 22px 0 10px;
+  color: var(--ink);
+}
+.legal-article p {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: var(--ink-60);
+  margin-bottom: 14px;
+}
+.legal-article ul {
+  margin: 4px 0 16px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.legal-article li {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-60);
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+}
+.legal-article li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--green);
+}
+.legal-article hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 36px 0;
+}
+.legal-article strong {
+  color: var(--ink);
+  font-weight: 600;
+}
