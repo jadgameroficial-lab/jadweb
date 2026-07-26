@@ -1,12 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const WA_LINK =
   "https://wa.me/5547991100596?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20JAD%20Platform%20OS%20e%20gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20estrat%C3%A9gico.";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+  const toSection = (hash) => (isHome ? hash : `/${hash}`);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -17,15 +22,15 @@ export default function Nav() {
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <div className="container">
-        <a href="#top" className="logo">
+        <Link href={isHome ? "#top" : "/"} className="logo">
           <span className="dot" />
           JAD Platform OS
-        </a>
+        </Link>
         <div className="nav-links">
-          <a href="#servicos">Serviços</a>
-          <a href="#processo">Processo</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contato">Contato</a>
+          <Link href={toSection("#servicos")}>Serviços</Link>
+          <Link href={toSection("#processo")}>Processo</Link>
+          <Link href={toSection("#faq")}>FAQ</Link>
+          <Link href={toSection("#contato")}>Contato</Link>
         </div>
         <div className="nav-cta">
           <a href={WA_LINK} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">
