@@ -974,59 +974,6 @@ section {
   background: var(--ink-35);
 }
 
-/* ---------- Projetos (real image showcase) ---------- */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-@media (max-width: 900px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.project-card {
-  border-radius: 20px;
-  border: 1px solid var(--line);
-  background: var(--bg-elev);
-  padding: 14px 14px 24px;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
-}
-.project-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(34, 197, 94, 0.4);
-}
-.project-image {
-  position: relative;
-  aspect-ratio: 4 / 3;
-  border-radius: 14px;
-  overflow: hidden;
-  box-shadow: 0 20px 44px -14px rgba(0, 0, 0, 0.6);
-}
-.project-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-}
-.project-card:hover .project-image img {
-  transform: scale(1.06);
-}
-.project-info {
-  padding: 22px 8px 0;
-}
-.project-info h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-.project-info p {
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--ink-60);
-}
-
 /* ---------- Depoimentos ---------- */
 .testi-grid {
   display: grid;

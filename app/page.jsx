@@ -7,7 +7,6 @@ import Servicos from "@/components/Servicos";
 import Diferenciais from "@/components/Diferenciais";
 import Processo from "@/components/Processo";
 import TechMarquee from "@/components/TechMarquee";
-import Projetos from "@/components/Projetos";
 import Depoimentos from "@/components/Depoimentos";
 import FAQ from "@/components/FAQ";
 import Contato from "@/components/Contato";
@@ -29,7 +28,6 @@ export default function Home() {
         <Diferenciais />
         <Processo />
         <TechMarquee />
-        <Projetos />
         <Depoimentos />
         <FAQ />
         <Contato />
